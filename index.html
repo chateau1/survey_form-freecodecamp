@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="UTF-8">
+    <title="Hockey Survey">
+      <link rel="stylesheet" a href="styles.css">
+      </header>
+  <body>
+    <h1 id="title">Hockey Fan Survey</h1>
+    <p id="description"> Please fill out the survey below to help us improve Canadian hockey teams.</p>
+
+<form id="survey-form">
+  <fieldset>
+  <label for="name" id="name-label">Name
+  </label>
+    <input id="name" type="text" required placeholder="Enter your name">
+  <label for="email" id="email-label">Email</label>
+  <input id="email" type="email" required placeholder="Enter your email">
+  <label for="number" id="number-label">Age
+  </label>
+  <input id="number" type="number" min="1" max="120" required placeholder="Enter your age">
+</fieldset>
+<fieldset>
+  <label for="hockey-team">Which Canadian NHL team do you support? 
+  <select id="dropdown">
+    <option value-"">Select Team</option>
+    <option value-"1">Calgary Flames</option>
+    <option value-"2">Edmonton Oilers</option>
+    <option value-"3">Montreal Canadiens</option>
+    <option value-"4">Ottawa Senators</option>
+    <option value-"5">Toronto Maple Leafs</option>
+    <option value-"6">Vancouver Canucks</option>
+    <option value-"7">Winnipeg Jets</option>
+  </select>
+  </label>
+</fieldset>
+<fieldset>
+<label for="TV">Do you prefer to watch hockey on TV?</label>
+
+ <label for="always">
+    <input name="tv-preference"            type="radio" id="always" class="inline" value="1">Always
+    </label>
+  <label for="sometimes">
+    <input name="tv-preference" type="radio" id="sometimes" class="inline" value="2">Sometimes
+  </label>
+  <label for="never">
+    <input name="tv-preference" type="radio" id="never" class="inline" value="3">Never
+  </label>
+</fieldset>
+<fieldset>
+<label for="merchandise">What merchandise are you most likely to purchase?</label>
+
+<label for="jersey">
+  <input id="jersey" type="checkbox" value="1" class="inline">Jersey
+  </label> 
+<label for="hat">
+  <input id="hat" type="checkbox" value="2" class="inline">Hat
+</label>
+<label for="mug">
+  <input id="mug" type="checkbox" value="3" class="inline">Coffee Mug
+</label>
+</fieldset>
+<fieldset>
+  <label for="hockey-player">Who is your favourite hockey player and why?</label>
+  <textarea id="hockey-player" placeholder="Auston Matthews is the best because..."></textarea>
+</fieldset>
+<input id="submit" type="submit" value="Submit" name="button"> 
+<input id="reset" type="reset" value="Reset" name="button">
+</form>
+  </body>
+  
+  </html>
